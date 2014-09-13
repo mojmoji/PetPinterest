@@ -153,7 +153,7 @@ module.exports = function (grunt) {
       dist: {
         files: [{
           expand: true,
-          cwd: '.tmp/styles/',
+          /*cwd: '.tmp/styles/',*/
           src: '{,*/}*.css',
           dest: '.tmp/styles/'
         }]
@@ -163,7 +163,7 @@ module.exports = function (grunt) {
     // Automatically inject Bower components into the app
     wiredep: {
       options: {
-        cwd: '<%= yeoman.app %>'
+        /*cwd: '<%= yeoman.app %>'*/
       },
       app: {
         src: ['<%= yeoman.app %>/index.html'],
@@ -241,7 +241,7 @@ module.exports = function (grunt) {
       dist: {
         files: [{
           expand: true,
-          cwd: '<%= yeoman.app %>/images',
+          /*cwd: '<%= yeoman.app %>/images',*/
           src: '{,*/}*.{png,jpg,jpeg,gif}',
           dest: '<%= yeoman.dist %>/images'
         }]
@@ -252,7 +252,7 @@ module.exports = function (grunt) {
       dist: {
         files: [{
           expand: true,
-          cwd: '<%= yeoman.app %>/images',
+          /*cwd: '<%= yeoman.app %>/images',*/
           src: '{,*/}*.svg',
           dest: '<%= yeoman.dist %>/images'
         }]
@@ -270,7 +270,7 @@ module.exports = function (grunt) {
         },
         files: [{
           expand: true,
-          cwd: '<%= yeoman.dist %>',
+          /*cwd: '<%= yeoman.dist %>',*/
           src: ['*.html', 'views/{,*/}*.html'],
           dest: '<%= yeoman.dist %>'
         }]
@@ -283,7 +283,7 @@ module.exports = function (grunt) {
       dist: {
         files: [{
           expand: true,
-          cwd: '.tmp/concat/scripts',
+          /*cwd: '.tmp/concat/scripts',*/
           src: ['*.js', '!oldieshim.js'],
           dest: '.tmp/concat/scripts'
         }]
@@ -303,7 +303,7 @@ module.exports = function (grunt) {
         files: [{
           expand: true,
           dot: true,
-          cwd: '<%= yeoman.app %>',
+          /*cwd: '<%= yeoman.app %>',*/
           dest: '<%= yeoman.dist %>',
           src: [
             '*.{ico,png,txt}',
@@ -315,19 +315,19 @@ module.exports = function (grunt) {
           ]
         }, {
           expand: true,
-          cwd: '.tmp/images',
+          /*cwd: '.tmp/images',*/
           dest: '<%= yeoman.dist %>/images',
           src: ['generated/*']
         }, {
           expand: true,
-          cwd: 'bower_components/bootstrap/dist',
+          /*cwd: 'bower_components/bootstrap/dist',*/
           src: 'fonts/*',
           dest: '<%= yeoman.dist %>'
         }]
       },
       styles: {
         expand: true,
-        cwd: '<%= yeoman.app %>/styles',
+        /*cwd: '<%= yeoman.app %>/styles',*/
         dest: '.tmp/styles/',
         src: '{,*/}*.css'
       }
